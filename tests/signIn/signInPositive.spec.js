@@ -17,7 +17,7 @@ test.describe("Sign in positive tests", () => {
     };
   });
 
-  test("Successful `Sign in` flow test", async ({ page }) => {
+  test("Successful `Sign in` flow test", async () => {
     await signInPage.open();
     await signInPage.fillEmailField(user.email);
     await signInPage.fillPasswordField(user.password);
