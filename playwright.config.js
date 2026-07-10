@@ -23,15 +23,15 @@ export default defineConfig({
   workers: process.env.CI ? 1 : 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
-  /** Shared settings for all the projects below. 
-   * See https://playwright.dev/docs/api/class-testoptions. 
+  /** Shared settings for all the projects below.
+   * See https://playwright.dev/docs/api/class-testoptions.
    */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: 'https://conduit.mate.academy',
 
-    /** Collect trace when retrying the failed test. 
-     * See https://playwright.dev/docs/trace-viewer 
+    /** Collect trace when retrying the failed test.
+     * See https://playwright.dev/docs/trace-viewer
      */
     trace: 'retain-on-failure',
   },
